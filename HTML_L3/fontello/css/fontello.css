@@ -19,49 +19,60 @@
   }
 }
 */
- 
+
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
- 
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
-.icon-user:before { content: '\e800'; } /* '' */
-.icon-mail:before { content: '\e801'; } /* '' */
-.icon-mail-alt:before { content: '\f0e0'; } /* '' */
-.icon-youtube:before { content: '\f167'; } /* '' */
-.icon-instagram:before { content: '\f16d'; } /* '' */
-.icon-wordpress:before { content: '\f19a'; } /* '' */
-.icon-graduation-cap:before { content: '\f19d'; } /* '' */
-.icon-heartbeat:before { content: '\f21e'; } /* '' */
-.icon-user-o:before { content: '\f2c0'; } /* '' */
-.icon-facebook-squared:before { content: '\f308'; } /* '' */
+
+.icon-user:before { content: '\e800'; font-size: 75px; margin-top: 20px; } /* '' */
+.icon-mail:before { content: '\e801'; font-size: 75px; margin-top: 20px; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; font-size: 75px; margin-top: 35px; } /* '' */
+.icon-youtube:before { content: '\f167'; font-size: 75px; margin-top: 35px;} /* '' */
+.icon-instagram:before { content: '\f16d'; font-size: 75px; margin-top: 35px; } /* '' */
+.icon-wordpress:before { content: '\f19a'; font-size: 75px; margin-top: 35px; } /* '' */
+.icon-graduation-cap:before { content: '\f19d'; font-size: 75px; margin-top: 20px; } /* '' */
+.icon-heartbeat:before { content: '\f21e'; font-size: 75px; margin-top: 20px; } /* '' */
+.icon-user-o:before { content: '\f2c0'; font-size: 75px; margin-top: 35px; } /* '' */
+.icon-facebook-squared:before { content: '\f308'; font-size: 75px; margin-top: 35px; } /* '' */
+
+.icon-user:hover { content: '\e800';  opacity: 0.5;} /* '' */
+.icon-mail:hover { content: '\e801'; opacity: 0.5;} /* '' */
+.icon-mail-alt:hover { content: '\f0e0'; opacity: 0.5;} /* '' */
+.icon-youtube:hover { content: '\f167';  opacity: 0.5;} /* '' */
+.icon-instagram:hover { content: '\f16d';opacity: 0.5;} /* '' */
+.icon-wordpress:hover { content: '\f19a';opacity: 0.5;} /* '' */
+.icon-graduation-cap:hover { content: '\f19d';opacity: 0.5;} /* '' */
+.icon-heartbeat:hover { content: '\f21e';opacity: 0.5;} /* '' */
+.icon-user-o:before { content: '\f2c0';opacity: 0.5;} /* '' */
+.icon-facebook-squared:hover { content: '\f308';opacity: 0.5;} /* '' */
