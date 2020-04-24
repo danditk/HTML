@@ -1,0 +1,105 @@
+body {
+  background-color: rgb(61, 57, 64);
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+#container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rectangle {
+  width: 960px;
+  padding: 20px;
+}
+
+#logo{
+  float: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 70px;
+  width: 600px;
+}
+
+#clock{
+  float: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 70px;
+}
+
+.square{
+  width: 50%;
+  float: left;
+}
+
+.title1{
+  margin: 10px;
+  width: 230px;
+  height: 142px;
+  background-color: rgb(34, 167, 217);
+  float: left;
+}
+
+.title2{
+  margin: 10px;
+  width: 230px;
+  height: 142px;
+  background-color: #666666;
+  float: left;
+}
+
+.title3{
+  margin: 10px;
+  width: 230px;
+  height: 142px;
+  background-color: rgb(137, 235, 83);
+  float: left;
+}
+
+.title4{
+  margin: 10px;
+  width: 480px;
+  height: 142px;
+  background-color: rgb(223, 145, 0);
+}
+
+.title5{
+  margin: 10px;
+  width: 480px;
+  height: 304px;
+  background-color: #666666;
+}
+
+.yt{
+  margin: 10px;
+  width: 105px;
+  height: 142px;
+  background-color: #ff0000;
+  float: left;
+}
+
+.fb{
+  margin: 10px;
+  width: 105px;
+  height: 142px;
+  background-color: #1877f2;
+  float: left;
+}
+
+.insta{
+  margin: 10px;
+  width: 105px;
+  height: 142px;
+  background-color: #c32aa3;
+  float: left;
+}
+
+.wp{
+  margin: 10px;
+  width: 105px;
+  height: 142px;
+  background-color: #21759b;
+  float: left;
+}
