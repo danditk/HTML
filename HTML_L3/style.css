@@ -137,6 +137,22 @@ a:hover{
   text-align: center;
 }
 
+.yt:hover{
+  background-color: #ee0000;
+}
+
+.fb:hover{
+  background-color: #0766e1;
+}
+
+.insta:hover{
+  background-color: #b21992;
+}
+
+.wp:hover{
+  background-color: #10648a;
+}
+
 .fontopacity:hover{
   opacity: 0.5;
 }
