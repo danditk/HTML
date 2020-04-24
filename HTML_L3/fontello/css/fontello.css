@@ -57,7 +57,7 @@
 
 .icon-user:before { content: '\e800'; font-size: 75px; margin-top: 20px; } /* '' */
 .icon-mail:before { content: '\e801'; font-size: 75px; margin-top: 20px; } /* '' */
-.icon-mail-alt:before { content: '\f0e0'; font-size: 75px; margin-top: 35px; } /* '' */
+.icon-mail-alt:before { content: '\f0e0';} /* '' */
 .icon-youtube:before { content: '\f167'; font-size: 75px; margin-top: 35px;} /* '' */
 .icon-instagram:before { content: '\f16d'; font-size: 75px; margin-top: 35px; } /* '' */
 .icon-wordpress:before { content: '\f19a'; font-size: 75px; margin-top: 35px; } /* '' */
@@ -66,13 +66,13 @@
 .icon-user-o:before { content: '\f2c0'; font-size: 75px; margin-top: 35px; } /* '' */
 .icon-facebook-squared:before { content: '\f308'; font-size: 75px; margin-top: 35px; } /* '' */
 
-.icon-user:hover { content: '\e800';  opacity: 0.5;} /* '' */
-.icon-mail:hover { content: '\e801'; opacity: 0.5;} /* '' */
-.icon-mail-alt:hover { content: '\f0e0'; opacity: 0.5;} /* '' */
-.icon-youtube:hover { content: '\f167';  opacity: 0.5;} /* '' */
-.icon-instagram:hover { content: '\f16d';opacity: 0.5;} /* '' */
-.icon-wordpress:hover { content: '\f19a';opacity: 0.5;} /* '' */
-.icon-graduation-cap:hover { content: '\f19d';opacity: 0.5;} /* '' */
-.icon-heartbeat:hover { content: '\f21e';opacity: 0.5;} /* '' */
-.icon-user-o:before { content: '\f2c0';opacity: 0.5;} /* '' */
-.icon-facebook-squared:hover { content: '\f308';opacity: 0.5;} /* '' */
+/* .icon-user:hover { content: '\e800';  opacity: 0.5;} /* '' */ */
+/* .icon-mail:hover { content: '\e801'; opacity: 0.5;} /* '' */
+/* .icon-mail-alt:hover { content: '\f0e0'; opacity: 0.5;} /* '' */ */ */
+/* .icon-youtube:hover { content: '\f167';  opacity: 0.5;} /* '' */ */
+/* .icon-instagram:hover { content: '\f16d';opacity: 0.5;} /* '' */ */
+/* .icon-wordpress:hover { content: '\f19a';opacity: 0.5;} /* '' */ */
+/* .icon-graduation-cap:hover { content: '\f19d';opacity: 0.5;} /* '' */ */
+/* .icon-heartbeat:hover { content: '\f21e';opacity: 0.5;} /* '' */ */
+/* .icon-user-o:before { content: '\f2c0';opacity: 0.5;} /* '' */ */
+/* .icon-facebook-squared:hover { content: '\f308';opacity: 0.5;} /* '' */ */
