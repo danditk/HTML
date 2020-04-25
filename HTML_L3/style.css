@@ -5,13 +5,23 @@ body {
   font-size: 20px;
 }
 
-a{
+a.tilelink{
   color: white;
+  text-decoration: none;
+
 }
 
-a:hover{
+a.tilelink:hover{
   opacity: 0.5;
 
+}
+
+a.tilelink_special{
+  display: block;
+  width: 230px;
+  height: 142px;
+  color: white;
+  text-decoration: none;
 }
 
 #container {
@@ -43,16 +53,17 @@ a:hover{
   float: left;
 }
 
-.title1{
+.tile1{
   margin: 10px;
   width: 230px;
   height: 142px;
   background-color: #22a7d9;
   float: left;
   text-align: center;
+  display: inline-block;
 }
 
-.title2{
+.tile2{
   margin: 10px;
   width: 230px;
   height: 142px;
@@ -61,7 +72,7 @@ a:hover{
   text-align: center;
 }
 
-.title3{
+.tile3{
   margin: 10px;
   width: 230px;
   height: 142px;
@@ -70,7 +81,7 @@ a:hover{
   text-align: center;
 }
 
-.title4{
+.tile4{
   margin: 10px;
   width: 480px;
   height: 116px;
@@ -81,23 +92,24 @@ a:hover{
   line-height: 150%;
 }
 
-.title5{
+.tile5{
   margin: 10px;
-  width: 480px;
-  height: 304px;
+  width: 420px;
+  height: 244px;
   background-color: #666666;
-  text-align: center;
+  text-align: justify;
+  padding: 30px;
 }
 
-.title1:hover{
+.tile1:hover{
   background-color: #1196c9;
 }
 
-.title2:hover{
+.tile2:hover{
   background-color: #555555;
 }
 
-.title3:hover{
+.tile3:hover{
   background-color: #78da42;
 }
 

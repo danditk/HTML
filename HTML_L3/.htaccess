@@ -1,0 +1,12 @@
+### PROJECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+Rewrite Engine on
+RewriteRule badz-silny-sprawny-i-zdrowy index.html
+RewriteRule kim-jestesmy kimjestesmy.html
+RewriteRule jak-mozemy-ci-pomoc pomoc.html
+RewriteRule nasze-wykrztaucenie wykrztaucenie.html
+RewriteRule skontaktuj-sie-z-nami kontak.html
