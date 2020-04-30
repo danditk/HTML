@@ -1,0 +1,309 @@
+body {
+  background-color: #032534;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: 0 !important;
+  z-index: 1;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+}
+
+article a{
+  text-decoration: none;
+  color: white;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.header h3 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  font-size: 60px;
+  padding: 20px;
+  letter-spacing: 2px;
+  text-shadow:
+  1px 1px 0 #77bbe4,
+  -1px 1px 0 #77bbe4,
+  -1px -1px 0 #77bbe4,
+   1px -1px 0 #77bbe4;
+}
+
+.nav {
+  width: 100%;
+  background-color: #cfd5f4;
+  text-align: center;
+  color: #032534;
+  border-top: 2px solid #77bbe4;
+  border-bottom: 2px solid #77bbe4;
+  /* padding-top: 10px; */
+}
+
+.nav ol{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 18px;
+  height: 42px;
+  line-height: 250%;
+  display: inline-block;
+}
+
+.nav ol a {
+  color: #032534;
+	text-decoration: none;
+  display: block;
+}
+
+.nav ol>li {
+  float: left;
+  border-right: 2px dashed #032534;
+  width: 200px;
+  height: 47px;
+}
+
+.nav ol>li:first-child {
+  border-left: 2px dashed #032534;
+}
+
+.nav ol>li:hover {
+  background-color: #77bbe4;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.nav ol>li:hover> a {
+  color: white;
+}
+
+.nav ol>li>ul{
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: 600;
+  list-style-type: none;
+  display: none;
+}
+
+.nav ol>li>ul a {
+  display: block;
+  color: white;
+}
+
+.nav ol>li>ul>li {
+  position: relative;
+  border-top: 2px dashed #032534;
+  background-color: #77bbe4;
+  z-index: 100;
+}
+
+
+.nav ol>li>ul>li:hover {
+  background-color: #77bbe4;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: #cfd5f4;
+}
+
+.nav ol>li>ul>li:hover a {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #032534;
+}
+
+.nav ol>li:hover >ul{
+  display: block;
+}
+
+
+.content {
+  padding-top: 30px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.content h2 {
+  text-align: center;
+}
+
+.content h3 {
+  text-align: center;
+}
+
+#spis{
+  width: 880px;
+  border: 2px solid #77bbe4;
+  background-color: rgb(207, 213, 244);
+  color: #032534;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+#spis ol{
+  margin-top: 5px;
+}
+
+#spis ol>li{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-right: 15px;
+  letter-spacing: 1.5px;
+}
+
+#spis ol>li>ul{
+  font-weight:normal;
+  text-transform: lowercase;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#spis ol>li>ul>li{
+  margin: 3px;
+}
+
+.separation{
+  width: 100%;
+  height: 5px;
+  border: 2px solid #77bbe4;
+  background-color: rgb(207, 213, 244);
+  color: #032534;
+  text-align: center;
+}
+
+.poslowie{
+  width: 80%;
+  font-size: 10px;
+}
+
+.podcast{
+  padding-left: 250px;
+  width: 500px;
+  height: 180px;
+}
+
+
+.socials {
+  width: 100%;
+  border-top: 2px solid #77bbe4;
+  border-bottom: 2px solid #77bbe4;
+  background-color: rgb(207, 213, 244);
+  color: #032534;
+  text-align: center;
+}
+
+.socialdives {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 0;
+}
+
+.insta {
+  background-color: #77bbe4;
+  width: 230px;
+  padding: 5px 0;
+  margin: 10px;
+  float: left;
+}
+
+.fb {
+  background-color: #77bbe4;
+  width: 230px;
+  padding: 5px 0;
+  margin: 10px;
+  float: left;
+}
+
+.yt {
+  background-color: #77bbe4;
+  width: 230px;
+  padding: 5px 0;
+  margin: 10px;
+  float: left;
+}
+
+.wp {
+  background-color: #77bbe4;
+  width: 230px;
+  padding: 5px 0;
+  margin: 10px;
+  float: left;
+}
+
+.insta:hover {
+  background-color: #c32aa3;
+  width: 230px;
+  padding: 5px 0;
+  margin: 10px;
+  float: left;
+}
+
+.fb:hover {
+  background-color: #1877f2;
+  width: 230px;
+  padding: 5px 0;
+  margin: 10px;
+  float: left;
+}
+
+.yt:hover {
+  background-color: #ff0000;
+}
+
+.wp:hover {
+  background-color: #21759b;
+  width: 230px;
+  padding: 5px 0;
+  margin: 10px;
+  float: left;
+}
+
+footer {
+  margin: 15px 0;
+  text-align: center;
+}
+
+footer>a{
+  font-size: 40px;
+}
+
+.sticky{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
