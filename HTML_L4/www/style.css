@@ -187,13 +187,11 @@ footer a{
   text-transform: lowercase;
   font-size: 15px;
   margin-bottom: 10px;
-  list-style: none;
+  list-style: "K";
 }
 
 #spis ol>li>ul>a {
   margin: 3px;
-  color: red;
-  padding: 1000px;
 }
 
 .separation{
