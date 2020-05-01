@@ -187,7 +187,7 @@ footer a{
   text-transform: lowercase;
   font-size: 15px;
   margin-bottom: 10px;
-  list-style: "K";
+  list-style: "➠";
 }
 
 #spis ol>li>ul>a {
