@@ -13,6 +13,21 @@
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="fontello\css\fontello.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="jquery.scrollTo.min.js" type="text/javascript">
+
+		jQuary(function($)
+			{
+				//zresetuj scrolla
+				$.scrollTo(0);
+
+				$('#l1x').click(function() { $.scrollTo($('#l1'), 500); });
+			}
+		);
+
+	</script>
+
 </head>
 
 <body>
@@ -89,30 +104,30 @@
 
 				<ol>
 					<li>
-						<a href="#genetyka">Genetyka w życiu, zdrowiu, sporcie</a>
+						<a id="l1x" href="#">Genetyka w życiu, zdrowiu, sporcie</a>
 						<ul>
-							<a href="#dna"><li>DNA</li></a>
-							<li><a href="#gen">Gen&nbsp;ACTN3</a></li>
-							<li>Homozygoty</li>
-							<li>Ekspresja genu</li>
+							<a id="l1.1x" href="#"><li>DNA</li></a>
+								<a id="l1.2x" href="#"><li>Gen&nbsp;ACTN3</li></a>
+								<a id="l1.3x" href="#"><li>Homozygoty</li></a>
+								<a id="l1.4" href="#"><li>Ekspresja genu</li></a>
 						</ul>
 					</li>
 					<li>
-						CHOROBA, PRZEZIĘBIENIE, URAZ, KONTUZJA, USZKODZENIE, OBRAŻENIE, TRAUMA, BÓL
+							<a id="#l2x" href="">CHOROBA, PRZEZIĘBIENIE, URAZ, KONTUZJA, USZKODZENIE, OBRAŻENIE, TRAUMA, BÓL</a>
 						<ul>
-							<li>Staramy się mieć kontrolę nad dużą częścią naszego życia</li>
-							<li>Zacznijmy od zwykłego przeziębienia</li>
-							<li>Jeśli chodzi o dolegliwości bólowe</li>
-							<li>Uraz, trauma definiowane jako uszkodzenie organizmu</li>
+								<a id="l2.1x" href="#"><li>Staramy się mieć kontrolę nad dużą częścią naszego życia</li></a>
+								<a id="l2.2x" href="#"><li>Zacznijmy od zwykłego przeziębienia</li></a>
+								<a id="l2.x3" href="#"><li>Jeśli chodzi o dolegliwości bólowe</li></a>
+								<a id="l2.4x" href="#"><li>Uraz, trauma definiowane jako uszkodzenie organizmu</li></a>
 						</ul>
 					</li>
 					<li>
-						Jak czytanie mojego bloga może wpłynąć na Ciebie w oczach Twojego&nbsp;pracodawcy
+							<a id="l3x" href="#">Jak czytanie mojego bloga może wpłynąć na Ciebie w oczach Twojego&nbsp;pracodawcy</a>
 						<ul>
-							<li>Nasze firmy –&nbsp;te, dla których&nbsp;pracujemy</li>
-							<li>Co może okazać się przydatne w najbliższym czasie dla firm na rynku?</li>
-							<li>Przedsiębiorczość – wykorzystanie tego potencjału przez pracodawce</li>
-							<li>Kiedy już zadbaliśmy o samych siebie, mamy poczucie bezpieczeństwa</li>
+								<a id="l3.1x" href="#"><li>Nasze firmy –&nbsp;te, dla których&nbsp;pracujemy</li></a>
+								<a id="l3.2x" href="#"><li>Co może okazać się przydatne w najbliższym czasie dla firm na rynku?</li></a>
+								<a id="l3.3x" href="#"><li>Przedsiębiorczość – wykorzystanie tego potencjału przez pracodawce</li></a>
+								<a id="l3.4x" href="#"><li>Kiedy już zadbaliśmy o samych siebie, mamy poczucie bezpieczeństwa</li></a>
 						</ul>
 					</li>
 				</ol>
@@ -125,7 +140,7 @@
 
 				<article>
 
-					<h1 id="genetyka" class="entry-title">Genetyka w życiu, zdrowiu, sporcie – Jakie możliwości ma Twój organizm? Dlaczego jesteś skazany na sukces? Jaki masz wpływ na swoje&nbsp;geny?</h1>
+					<h1 id="l1" class="entry-title">Genetyka w życiu, zdrowiu, sporcie – Jakie możliwości ma Twój organizm? Dlaczego jesteś skazany na sukces? Jaki masz wpływ na swoje&nbsp;geny?</h1>
 
 					<div class="entry-content">
 
@@ -135,7 +150,7 @@
 
 
 
-						<p id="dna" class="has-text-align-justify"><strong>DNA</strong><br>DNA&nbsp;to kwas deoksyrybonukleinowy. Jak podaje piśmiennictwo, został odkryty w 1869 roku przez Fryderyka&nbsp;Miescher. Na to, jak zbudowane jest nasze DNA, mają wpływ geny
+						<p id="l1.1" class="has-text-align-justify"><strong>DNA</strong><br>DNA&nbsp;to kwas deoksyrybonukleinowy. Jak podaje piśmiennictwo, został odkryty w 1869 roku przez Fryderyka&nbsp;Miescher. Na to, jak zbudowane jest nasze DNA, mają wpływ geny
 							naszych
 							rodziców. Obecnie <strong>modyfikacje genu</strong> na pojedynczej komórce są jak najbardziej <strong>możliwe</strong>. Gdy w grę wchodzi jednak cały <strong>organizm</strong>, aktualne badania wskazują, że jest to
 							<strong>nieosiągalne</strong>. Ciekawą informacją jest, że wcale nie jesteśmy tak wyjątkowi pod kątem naszego DNA. Przykładem może być <strong>banan</strong>, którego <strong>50%</strong> DNA, jest <strong>takie samo</strong> jak
@@ -143,7 +158,7 @@
 
 
 
-						<p id="gen" class="has-text-align-justify"><strong>Gen&nbsp;ACTN3<br></strong>Białko jest budulcem w naszym organizmie. Z kolei białka zbudowane są z <strong>aminokwasów białkowych</strong>. Aminokwasy te dzielą się na <strong>endogenne</strong>,
+						<p id="l1.2"class="has-text-align-justify"><strong>Gen&nbsp;ACTN3<br></strong>Białko jest budulcem w naszym organizmie. Z kolei białka zbudowane są z <strong>aminokwasów białkowych</strong>. Aminokwasy te dzielą się na <strong>endogenne</strong>,
 							czyli te, które organizm potrafi sam produkować i <strong>egzogenne</strong>, czyli te, które trzeba dostarczyć do organizmu na przykład z pożywienia.&nbsp;ACTN3&nbsp;to jeden z <strong>najlepiej </strong>przebadanych genów, który
 							skorelowany jest z naszym fenotypem. Produktem tego genu może być, ówcześnie zakodowane przez ten gen białko, które będzie białkiem <strong>funkcjonalnym </strong>lub <strong>niefunkcjonalnym</strong>. W zależności, od tego budulca,
 							<strong>organizm </strong>może mieć mięśnie <strong>predestynowane do sportów</strong> szybkościowych lub też nie. Ponadto gen ten skorelowany jest także z naszymi możliwościami <strong>regeneracyjnymi</strong>, a także z podatnością
@@ -176,7 +191,7 @@
 
 
 
-						<p class="has-text-align-justify"><strong>Homozygoty</strong><br>W zależności od wersji genu — <strong>alleli</strong>, które odziedziczamy po rodzicach, homozygoty mogą dzielić się na <strong>dwa rodzaje</strong>.
+						<p id="l1.3" class="has-text-align-justify"><strong>Homozygoty</strong><br>W zależności od wersji genu — <strong>alleli</strong>, które odziedziczamy po rodzicach, homozygoty mogą dzielić się na <strong>dwa rodzaje</strong>.
 							<strong>Dominujące</strong>, to takie w których dwie wersje genu są <strong>dominujące </strong>pod względem ilości innych genów oraz <strong>recesywne</strong>, te które są <strong>mniej znaczące</strong>, robiąc przestrzeń do działań
 							innym genom. Zobrazuje to na przykładzie genu&nbsp;ACTN3. Są trzy możliwości. Przykładem homozygoty dominującej będzie, obraz mamy i taty mających <strong>silny gen</strong>, wpływający na <strong>budowę </strong>naszych
 							<strong>mięśni</strong> i w końcu na nasz <strong>potencjał szybkościowy w sporcie</strong>, my także będziemy <strong>predysponowani</strong> do posiadania tych <strong>sportowych zdolności</strong>. Obrazem homozygoty recesywnej,
@@ -193,7 +208,7 @@
 
 
 
-						<p class="has-text-align-justify"><strong>Ekspresja genu</strong><br>Nasz&nbsp;organizm reguluje ekspresje naszych genów. <strong>Dobrą informacją</strong> jest dla nas to, że <strong>mamy wpływ tę ekspresję</strong>, <strong>dostarczając
+						<p id="l1.4" class="has-text-align-justify"><strong>Ekspresja genu</strong><br>Nasz&nbsp;organizm reguluje ekspresje naszych genów. <strong>Dobrą informacją</strong> jest dla nas to, że <strong>mamy wpływ tę ekspresję</strong>, <strong>dostarczając
 							</strong>naszemu organizmu odpowiednich <strong>bodźców</strong>. Jednak <strong>ekspresja </strong>genów może okazać się dla nas, zarówno <strong>korzystna</strong>, jak i być dla nas <strong>niebezpieczna </strong>i predysponować do
 							<strong>podatności organizmu</strong>, na <strong>negatywnie zmiany.</strong> I tutaj posłużę się może przykładami spoza dziedziny sportu.</p>
 
@@ -403,13 +418,13 @@
 
 					<div class="entry-content">
 
-						<h1 class="entry-title">CHOROBA, PRZEZIĘBIENIE, URAZ, KONTUZJA, USZKODZENIE, OBRAŻENIE, TRAUMA, BÓL. O tym, jak sobie z tym&nbsp;radzić.</h1>
+						<h1 id="l2" class="entry-title">CHOROBA, PRZEZIĘBIENIE, URAZ, KONTUZJA, USZKODZENIE, OBRAŻENIE, TRAUMA, BÓL. O tym, jak sobie z tym&nbsp;radzić.</h1>
 
 						<p class="has-text-align-center">Tak wyglądałem, kiedy miałem jeszcze ponad 25 kilogramów więcej niż teraz.<br><em>Mając 94,6 kg , moje życie było dosyć ciężkie fizycznie i psychicznie.</em></p>
 
 
 
-						<p class="has-text-align-justify">Staramy się mieć kontrolę nad dużą częścią naszego życia, jednak czasami pojawiają się elementy, które mogą nas zaskoczyć, na które nie zawsze mamy wpływ. Zdarzają się również problemy, którym mogliśmy
+						<p id="l2.1" class="has-text-align-justify">Staramy się mieć kontrolę nad dużą częścią naszego życia, jednak czasami pojawiają się elementy, które mogą nas zaskoczyć, na które nie zawsze mamy wpływ. Zdarzają się również problemy, którym mogliśmy
 							zapobiec, jednak na reakcję jest już za późno. Na swoim przykładzie postaram się wyjaśnić, jakie problemy mogą na nas czyhać, jako zwykłego człowieka, a także amatora wszelakich sportów. Postaram się przybliżyć, jak ja sobie z tym
 							radzę, jakie przeszkody zauważam. W jakie środki zaradcze wierzę, które sam stosuje, aby zapobiegać niektórym dolegliwościom.</p>
 
@@ -431,7 +446,7 @@
 
 
 
-						<p class="has-text-align-justify">Zacznijmy od zwykłego przeziębienia. Zasięgnąłem wielu opinii na ten temat, zapoznałem się niegdyś, również z kilkoma opracowaniami w piśmiennictwie. Wydaje się w tym przypadku, że jeśli przeziębienie
+						<p id="l2.2" class="has-text-align-justify">Zacznijmy od zwykłego przeziębienia. Zasięgnąłem wielu opinii na ten temat, zapoznałem się niegdyś, również z kilkoma opracowaniami w piśmiennictwie. Wydaje się w tym przypadku, że jeśli przeziębienie
 							obejmuje górne drogi oddechowe (drapanie w gardle, katar, kichanie), człowiek czuje się dobrze fizycznie i nie ma podwyższonej temperatury, wówczas kontynuuje treningi zgodnie z planem treningowym, nie mniej intensywność powinna ulec
 							zmniejszeniu. Po rozgrzewce będziemy wiedzieli więcej na temat intensywności treningu, który za chwile planujemy wykonać lub podejmiemy decyzję o rezygnacji z niego. Często w takim niezbyt uciążliwym stanie, liczę na pobudzenie
 							metabolizmu, podwyższenie temperatury w trakcie wysiłku i w konsekwencji szybszego dostarczania substancji odżywczych do komórek, pozbyciu się zbędnych i toksycznych produktów przemiany materii (metabolitów), polepszeniu samopoczucia.
@@ -449,7 +464,7 @@
 
 
 
-						<p class="has-text-align-justify">Jeśli chodzi o dolegliwości bólowe. Tutaj nie ma lepszego rozwiązania niż wizyta u specjalisty. Sportowiec amator często zawiesza poprzeczkę bardzo wysoko, co ułatwia mu lekceważenie dolegliwości
+						<p id="l2.3" class="has-text-align-justify">Jeśli chodzi o dolegliwości bólowe. Tutaj nie ma lepszego rozwiązania niż wizyta u specjalisty. Sportowiec amator często zawiesza poprzeczkę bardzo wysoko, co ułatwia mu lekceważenie dolegliwości
 							bólowych. Może mieć to związek z niewłaściwie sformułowanymi motywacjami, o czym pisałem w jednym z ostatnich postów – SYSTEMY MOTYWACJI. Dodatkowo sportowcy mają często wyższy próg odczuwania bólu w stosunku do
 							przeciętnego&nbsp;kanapowicza. Taki permanentny stosunek do demonizowania swojego chronicznego bólu może być zalążkiem do powstania urazów. O ile jest to niewielka dolegliwość żołądkowa, lekki ból głowy, niewielka kontuzja
 							nieutrudniająca ruchu, czy też ból wynikający z uciśniętego nerwu spowodowanego spaniem w uciążliwej pozycji, wtedy aktywność fizyczna może zadziałać jak lekarstwo. O tyle nawracające bóle stawowe,&nbsp;powięziowe, mięśniowe (nie
@@ -466,7 +481,7 @@
 
 
 
-						<p class="has-text-align-justify">Uraz, trauma definiowane jako uszkodzenie organizmu będące skutkiem różnych czynników zewnętrznych, w których pozbyciu się pomóc nam mogą specjaliści tacy jak traumatolodzy. Z kolei uszkodzenie tudzież
+						<p id="l2.4" class="has-text-align-justify">Uraz, trauma definiowane jako uszkodzenie organizmu będące skutkiem różnych czynników zewnętrznych, w których pozbyciu się pomóc nam mogą specjaliści tacy jak traumatolodzy. Z kolei uszkodzenie tudzież
 							obrażenie to następstwo urazu.<br>Do kontuzji (łać.&nbsp;Contusio&nbsp;– ściśnięcie, stłuczenia) dochodzi wówczas, gdy na ciało zadziała zewnętrzna siła mechaniczna, przez którą dochodzi do stłuczenia ciała, czyli obrażeń zamkniętych
 							tkanek miękkich narządu ruchu lub też potłuczenia narządów w połączeniu z uszkodzeniem tkanek. Nie obejmują one więc poważniejszych uszkodzeń, takich jak zamknięte obrażenia tkanek miękkich, rany, złamania, skręcenia, zwichnięcia, które
 							powstały na skutek urazu.</p>
@@ -641,7 +656,7 @@
 
 					<div class="entry-content">
 
-						<h1 class="entry-title">Jak czytanie mojego bloga może wpłynąć na Ciebie w oczach Twojego&nbsp;pracodawcy.</h1>
+						<h1 id="l3" class="entry-title">Jak czytanie mojego bloga może wpłynąć na Ciebie w oczach Twojego&nbsp;pracodawcy.</h1>
 
 						<div class="entry-content">
 
@@ -653,11 +668,11 @@
 
 
 
-							<p>Nasze firmy –&nbsp;te, dla których&nbsp;pracujemy, obecnie znalazły się w niekorzystnej sytuacji. Większość z nich ma obecnie pewne trudności. Niektóre z nich większe, niektóre mniejsze. Istnieje duże ryzyko, że utracimy swoją posadę, ale czy możemy z tym coś zrobić???</p>
+							<p id="l3.1">Nasze firmy –&nbsp;te, dla których&nbsp;pracujemy, obecnie znalazły się w niekorzystnej sytuacji. Większość z nich ma obecnie pewne trudności. Niektóre z nich większe, niektóre mniejsze. Istnieje duże ryzyko, że utracimy swoją posadę, ale czy możemy z tym coś zrobić???</p>
 
 
 
-							<p>Co może okazać się przydatne w najbliższym czasie dla firm na rynku? Jakie umiejętności będą najbardziej pożądane? Jak Ty możesz zmienić swój wizerunek w oczach pracodawcy? Jak możesz wpłynąć na to, jak postrzegasz się sam i jak widzi Cię społeczeństwo? Czytaj dalej, a postaram Ci się wytłumaczyć to, w tym krótkim, ale jakże treściwym i potrzebnym artykule.</p>
+							<p id="l3.2">Co może okazać się przydatne w najbliższym czasie dla firm na rynku? Jakie umiejętności będą najbardziej pożądane? Jak Ty możesz zmienić swój wizerunek w oczach pracodawcy? Jak możesz wpłynąć na to, jak postrzegasz się sam i jak widzi Cię społeczeństwo? Czytaj dalej, a postaram Ci się wytłumaczyć to, w tym krótkim, ale jakże treściwym i potrzebnym artykule.</p>
 
 
 
@@ -669,7 +684,7 @@
 
 
 
-							<ul><li>Przedsiębiorczość – wykorzystanie tego potencjału przez pracodawce</li><li>Nietypowa wiedza – pracodawca może znaleźć jej zastosowanie, wykorzystać i przekazać innym pracownikom</li><li>Umiejętności miękkie&nbsp;(&nbsp;m.in. interpersonalne, psychologiczne, zarządzania, etc.&nbsp;) przystosowanie i zaaplikowanie tychże, do obecnych nastrojów i warunków, panujących na rynku. Przykładowe zastosowanie:<ul><li>Zapewnienie pracowników o ich bezpieczeństwie na obecnym stanowisku, przez osoby, które posiadają umiejętności miękkie, interpersonalne</li></ul></li></ul>
+							<ul id="l3.3"><li>Przedsiębiorczość – wykorzystanie tego potencjału przez pracodawce</li><li>Nietypowa wiedza – pracodawca może znaleźć jej zastosowanie, wykorzystać i przekazać innym pracownikom</li><li>Umiejętności miękkie&nbsp;(&nbsp;m.in. interpersonalne, psychologiczne, zarządzania, etc.&nbsp;) przystosowanie i zaaplikowanie tychże, do obecnych nastrojów i warunków, panujących na rynku. Przykładowe zastosowanie:<ul><li>Zapewnienie pracowników o ich bezpieczeństwie na obecnym stanowisku, przez osoby, które posiadają umiejętności miękkie, interpersonalne</li></ul></li></ul>
 
 
 
@@ -693,7 +708,7 @@
 
 
 
-							<p>Kiedy już zadbaliśmy o samych siebie, mamy poczucie bezpieczeństwa, zadbajmy o innych.</p>
+							<p id="l3.4">Kiedy już zadbaliśmy o samych siebie, mamy poczucie bezpieczeństwa, zadbajmy o innych.</p>
 
 
 
