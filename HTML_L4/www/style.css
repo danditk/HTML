@@ -188,6 +188,7 @@ footer a{
   text-transform: lowercase;
   font-size: 15px;
   margin-bottom: 10px;
+  list-style: disc;
 }
 
 #spis ol>li>ul>li{
