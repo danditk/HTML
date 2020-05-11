@@ -19,7 +19,7 @@ h1.logo{
 	text-transform: uppercase;
 }
 
-nav{
+#topnav{
 	background-color: #1C74b2;
 	text-align: center;
 }
@@ -185,4 +185,22 @@ h2{
 	float: left;
 	width: 170px;
 	padding: 20px;
+}
+
+.west h1{
+	font-size: 32px;
+	font-weight: 400;
+	color: #39a5f1;
+}
+
+.east > ul{
+	padding-left: 20px;
+}
+
+.east > ul > li{
+	margin-bottom: 19px;
+}
+
+.east img{
+	margin-top: 15px;
 }
