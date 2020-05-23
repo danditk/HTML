@@ -12,9 +12,29 @@
 	<link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
+
 	<header>
 		<h1>Wybierz konfiguurację samochodu</h1>
 	</header>
+
+	<?php include "kupujacy.php";
+
+	// uzytkownik();
+	// echo "<br>";
+	//
+	// uzytkownik("Kasia","Kowalska");
+	// echo "<br>";
+	//
+	// uzytkownik("Michał");
+	// echo "<br>";
+
+	$kupujacy = new Buyer();
+	$kupujacy->imie = "Janek";
+	$kupujacy->nazwisko = "Kowalewski";
+	$kupujacy->test(); echo $kupujacy->imie ." ". $kupujacy->nazwisko;
+	$kasia = new Buyer("Katarzyna", "Malinowska", "k", "25");
+	echo "<br><br><br>";
+	?>
 
 	<main>
 		<article class="">
@@ -42,31 +62,69 @@
 	</main>
 
 
-	<?php
+	<br><br><br>
+	<h3>Z wykorzystaniem pętli for</h3>
+	<table border="1">
+		<caption>Klienci którzy nam zaufali</caption>
+		<tr>
+			<th>Imie</th>
+			<th>Nazwisko</th>
+		</tr>
+		<?php
 
-	function uzytkownik($imie = "nieznajomy",$nazwisko = "",$plec = "",$wiek = ""){
-		$uzytkownikname = $imie." ".$nazwisko;
+			$klienci = array();
+			for ($i=0; $i < 3; $i++) {
+				$klienci[$i] = new Buyer();
+			}
 
-		echo "Witaj użytkowniku " . $uzytkownikname. ".<br><br>";
-	}
+			$klienci[0]->imie = "Daniel";
+			$klienci[0]->nazwisko = "Kondraciuk";
+			$klienci[1]->imie = "Hubert";
+			$klienci[1]->nazwisko = "Duklanowski";
+			$klienci[2]->imie = "Andrzej";
+			$klienci[2]->nazwisko = "Skorykow";
 
-	uzytkownik("Katarzyna", "Malinowska");
-	uzytkownik();
+			$tajemniczyKlient = new Buyer();
 
-	// class osoba(imie){
-	// 	$imie;
-	// 	function_constructt(){
-	// 		$this->imie = "nieznajomy";
-	// 	}
-	// }
-	//
-	// $name = "Elżbieta";
-	//
-	// echo "Witaj ".$name. "!";
+			// wyświetlenie za pomocą for
+			for ($i=0; $i < 3; $i++) {
+				echo	"<tr>";
+				echo			"<td>".$klienci[$i]->imie."</td>";
+				echo			"<td>".$klienci[$i]->nazwisko."</td>";
+				echo	"</tr>";
+			}
 
-	?>
+			echo	"<tr>";
+			echo			"<td>".$tajemniczyKlient->imie."</td>";
+			echo			"<td>".$tajemniczyKlient->nazwisko."</td>";
+			echo	"</tr>";
+
+		 ?>
+	</table>
+	<br><br>
+
+	<h3>Z wykorzystaniem pętli foreach</h3>
+	<table border="1">
+		<caption>Klienci zadowoleni z naszego serwisu</caption>
+		<tr>
+			<th>Imie</th>
+			<th>Nazwisko</th>
+		</tr>
+		<?php
+			// wyswietlenie za pomocą foreach
+			foreach ($klienci as $klient):
+		 ?>
+		 <tr>
+		 	<td><?= $klient->imie ?></td>
+		 	<td><?= $klient->nazwisko ?></td>
+		 </tr>
+	 <?php endforeach; ?>
+	</table>
 
 
+
+
+		<br><br><br><br><br><br>
 		Copyright (c) 2018 Copyright Holder All Rights Reserved.
 </body>
 
