@@ -15,12 +15,23 @@ h1{
   text-align: center;
 }
 
+legend, label.select {
+  padding: 10px;
+  border: 1px solid #FA7C00;
+  border-radius: 5px;
+  background-color: #3a312C;
+}
+
 .lista{
   padding: 10px;
   border: 1px solid #FA7C00;
   border-radius: 5px;
   width: 200px;
   margin-bottom: 20px;
+}
+
+.lista:hover{
+  background-color: #3a312C;
 }
 
 ul{
@@ -33,6 +44,19 @@ ul>li{
   padding: 5px 0;
 }
 
-.lista:hover{
-  background-color: #3a423f;
+ul>li:hover{
+  text-shadow: 1px 0px 2px #CCCCCC;
+}
+
+select{
+  background-color: #29201B;
+  color: #efefef;
+  padding: 0;
+  margin: 0 10px;
+  height: 35px;
+}
+
+option:hover{
+  text-shadow: 1px 0px 2px #CCCCCC;
+  background-color: #3a312C;
 }
