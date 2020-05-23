@@ -39,38 +39,69 @@
 	<main>
 		<article class="">
 			<form class="" action="index.html" method="post" enctype="application/x-www-form-urlencoded">
-				<fieldset class="lista">
-					<legend>Rodzaj nadwozia</legend>
-					<ul>
-						<li><label><input type="radio" name="nadwozie" value="1" checked> Hatchback</label></li>
-						<li><label><input type="radio" name="nadwozie" value="2"> Kabriolet</label></li>
-						<li><label><input type="radio" name="nadwozie" value="3"> Kombi</label></li>
-					</ul>
-				</fieldset>
+				<div class="row">
+					<fieldset class="lista">
+						<legend>Rodzaj nadwozia</legend>
+						<ul>
+							<li><label><input type="radio" name="nadwozie" value="1" checked> Hatchback</label></li>
+							<li><label><input type="radio" name="nadwozie" value="2"> Kabriolet</label></li>
+							<li><label><input type="radio" name="nadwozie" value="3"> Kombi</label></li>
+						</ul>
+					</fieldset>
+				</div>
 
-				<label class="select" for="silnik">Rodzaj silnika</label>
-				<select class="lista" name="silnik">
-					<option value="w">wysokoprężny</option>
-					<option value="b" selected>benzynowy</option>
-					<option value="e">elektryczny</option>
-					<option value="h">hybrydowy</option>
-				</select>
+				<div class="row">
+					<label class="select" for="silnik">Rodzaj silnika</label>
+					<select class="lista" name="silnik">
+						<option value="w">wysokoprężny</option>
+						<option value="b" selected>benzynowy</option>
+						<option value="e">elektryczny</option>
+						<option value="h">hybrydowy</option>
+					</select>
+				</div>
+
+				<div class="row">
+					<fieldset class="lista">
+						<legend>Wyposażenie samochodu</legend>
+						<ul>
+							<div class="col">
+								<li><label><input type="checkbox" name="wyposazenie[]" value="1" checked disabled>Klimatyzacja</label></li>
+								<li><label><input type="checkbox" name="wyposazenie[]" value="2" checked disabled>Systemy: ESP i ABS</label></li>
+								<li><label><input type="checkbox" name="wyposazenie[]" value="3">Skórzana tapicerka</label></li>
+								<li><label><input type="checkbox" name="wyposazenie[]" value="4">Tempomat</label></li>
+							</div>
+							<div class="col">
+								<li><label><input type="checkbox" name="wyposazenie[]" value="5">Panel nawigacji android</label></li>
+								<li><label><input type="checkbox" name="wyposazenie[]" value="6">Reflektory przeciwmgielne</label></li>
+								<li><label><input type="checkbox" name="wyposazenie[]" value="7">Tylny spojler dachowy</label></li>
+								<li><label><input type="checkbox" name="wyposazenie[]" value="8">Przyciemniane szyby</label></li>
+							</div>
+							<div class="col">
+								<li><label><input type="checkbox" name="wyposazenie[]" value="9">Czujniki parkowania</label></li>
+								<li><label><input type="checkbox" name="wyposazenie[]" value="10">Podgrzewane fotele</label></li>
+								<li><label><input type="checkbox" name="wyposazenie[]" value="11">Skłądane lusterka</label></li>
+								<li><label><input type="checkbox" name="wyposazenie[]" value="12">Światła LED do jazsy dziennej</label></li>
+							</div>
+							<div style="clear: both;"></div>
+						</ul>
+					</fieldset>
+				</div>
 
 			</form>
 
 		</article>
 	</main>
 
-
-	<br><br><br>
-	<h3>Z wykorzystaniem pętli for</h3>
-	<table border="1">
-		<caption>Klienci którzy nam zaufali</caption>
-		<tr>
-			<th>Imie</th>
-			<th>Nazwisko</th>
-		</tr>
-		<?php
+	<div class="row">
+		<br><br><br>
+		<h3>Z wykorzystaniem pętli for</h3>
+		<table border="1">
+			<caption>Klienci którzy nam zaufali</caption>
+			<tr>
+				<th>Imie</th>
+				<th>Nazwisko</th>
+			</tr>
+			<?php
 
 			$klienci = array();
 			for ($i=0; $i < 3; $i++) {
@@ -99,33 +130,36 @@
 			echo			"<td>".$tajemniczyKlient->nazwisko."</td>";
 			echo	"</tr>";
 
-		 ?>
-	</table>
+			?>
+		</table>
+	</div>
 	<br><br>
 
-	<h3>Z wykorzystaniem pętli foreach</h3>
-	<table border="1">
-		<caption>Klienci zadowoleni z naszego serwisu</caption>
-		<tr>
-			<th>Imie</th>
-			<th>Nazwisko</th>
-		</tr>
-		<?php
+	<div class="row">
+		<h3>Z wykorzystaniem pętli foreach</h3>
+		<table border="1">
+			<caption>Klienci zadowoleni z naszego serwisu</caption>
+			<tr>
+				<th>Imie</th>
+				<th>Nazwisko</th>
+			</tr>
+			<?php
 			// wyswietlenie za pomocą foreach
 			foreach ($klienci as $klient):
-		 ?>
-		 <tr>
-		 	<td><?= $klient->imie ?></td>
-		 	<td><?= $klient->nazwisko ?></td>
-		 </tr>
-	 <?php endforeach; ?>
-	</table>
+				?>
+				<tr>
+					<td><?= $klient->imie ?></td>
+					<td><?= $klient->nazwisko ?></td>
+				</tr>
+			<?php endforeach; ?>
+		</table>
+	</div>
 
 
 
 
 		<br><br><br><br><br><br>
-		Copyright (c) 2018 Copyright Holder All Rights Reserved.
+		<footer>Copyright (c) 2018 Copyright Holder All Rights Reserved.</footer>
 </body>
 
 </html>

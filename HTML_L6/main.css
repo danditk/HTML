@@ -15,19 +15,30 @@ h1{
   text-align: center;
 }
 
-legend, label.select {
+.row{
+  margin: 20px 10px;
+}
+
+.col{
+  display: inline-block;
+}
+
+legend, label.select, .row{
   padding: 10px;
   border: 1px solid #FA7C00;
   border-radius: 5px;
   background-color: #3a312C;
 }
 
-.lista{
+.lista, .col{
   padding: 10px;
   border: 1px solid #FA7C00;
   border-radius: 5px;
-  width: 200px;
   margin-bottom: 20px;
+}
+
+.col{
+  margin: 10px;
 }
 
 .lista:hover{
@@ -39,7 +50,7 @@ ul{
   padding: 0;
 }
 
-ul>li{
+ul>li, ul>div>li{
   list-style-type: none;
   padding: 5px 0;
 }
@@ -52,7 +63,7 @@ select{
   background-color: #29201B;
   color: #efefef;
   padding: 0;
-  margin: 0 10px;
+  margin: 20px 10px;
   height: 35px;
 }
 
