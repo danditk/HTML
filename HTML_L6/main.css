@@ -59,15 +59,55 @@ ul>li:hover{
   text-shadow: 1px 0px 2px #CCCCCC;
 }
 
-select{
+select, option{
   background-color: #29201B;
   color: #efefef;
   padding: 0;
   margin: 20px 10px;
-  height: 35px;
 }
 
 option:hover{
   text-shadow: 1px 0px 2px #CCCCCC;
   background-color: #3a312C;
+}
+
+.labelDiferent,
+.labelDiferent>label>input{
+  margin: 15px;
+}
+
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=color],
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=time],
+input[type=url],
+textarea,
+progress{
+  display: block;
+  margin: 15px;
+  border-color: #FA7C00;
+  border-radius: 5px;
+}
+
+#uwagi{
+  resize: none;
+}
+
+input[type=submit]{
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 40px;
+}
+
+input[type=reset]{
+  background-color: red;
+  margin-left: 205px;
+  border-radius: 5px;
+  padding: 5px;
 }

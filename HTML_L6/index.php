@@ -38,7 +38,12 @@
 
 	<main>
 		<article class="">
-			<form class="" action="index.html" method="post" enctype="application/x-www-form-urlencoded">
+			<form class="" action="order.php" method="post" enctype="multipart/form-data">
+				<!-- enctype="application/x-www-form-urlencoded" - dla wysyłania zaszyfrowanych danych -->
+				<div class="row">
+					<label>Szukaj:<input type="search" name="fraza" placeholder="Wyszukaj frazę"></label>
+				</div>
+
 				<div class="row">
 					<fieldset class="lista">
 						<legend>Rodzaj nadwozia</legend>
@@ -52,7 +57,7 @@
 
 				<div class="row">
 					<label class="select" for="silnik">Rodzaj silnika</label>
-					<select class="lista" name="silnik">
+					<select id="silnik" class="lista" name="silnik">
 						<option value="w">wysokoprężny</option>
 						<option value="b" selected>benzynowy</option>
 						<option value="e">elektryczny</option>
@@ -85,6 +90,77 @@
 							<div style="clear: both;"></div>
 						</ul>
 					</fieldset>
+				</div>
+
+				<div class="row">
+					<div class="labelDiferent">
+						<label class="select" for="choinka">Wybierz choinki zapachowe</label>
+					</div>
+					<select id="choinka" class="lista" name="choinka[]" multiple size="11">
+						<option value="k">kokosowa</option>
+						<option value="c" selected>cytrynowa</option>
+						<option value="t">truskawkowa</option>
+						<option value="b">brzoskwiniowa</option>
+					</select>
+				</div>
+
+				<div class="row">
+					<label>Imie:<input type="text" name="imie" placeholder="Wpisz imie" required></label>
+					<label>Hasło:<input type="password" name="haslo" placeholder="Wpisz hasło"></label>
+					<label>Email:<input type="email" name="email" placeholder="Wpisz email"></label>
+					<label>Numer telefonu:<input type="tel" name="numer" placeholder="Wpisz numer telefonu"></label>
+				</div>
+
+				<div class="row">
+					<label>Ile kluczyków chce Pań zamówić?<input type="number" name="kluczyk" value="1" step="1"></label>
+				</div>
+
+				<div class="row">
+					<label>Kolor lakieru<input type="color" name="kolor" value="#ff0000"></label>
+				</div>
+
+				<div class="row">
+					<label>Preferowana data dostwy:<input type="date" name="data_dostawy" min="2020-07-01" max="2020-12-18"></label>
+					<label>Preferowany czas dostwy:<input type="time" name="czas_dostawy" value="18:30" readonly></label>
+					<!-- min="10:00" max="18:45:50" step="1" -->
+					<p>Godzina nie podlega negocjacji</p>
+				</div>
+
+				<div class="row">
+					<div class="labelDiferent">
+						<label>Wyślij nam zdjęcie starego samochodu, a dostaniesz zniżkę 3% na zakup nowego samochodu<input type="file" name="zdjecie" accept="image/x-png,image/jpeg,image/gif" multiple></label>
+					</div>
+					<div class="labelDiferent">
+						<label>Twoja strona www</label><input type="url" name="witryna">
+					</div>
+				</div>
+
+				<input type="hidden" name="token" value="ug32jhn23n4rf08hw8en4">
+
+				<div class="row">
+					<div class="labelDiferent">
+						<label for="uwagi">Uwagi do zamówienia</label>
+					</div>
+						<textarea id="uwagi" name="uwagi" rows="8" cols="57" maxlength="250" minlength="25"></textarea>
+				</div>
+
+				<div class="row">
+						<label for="proces">Stopień realizacji zamówienia</label>
+						<progress id="realizacja" value="25" max="100">0%</progress>
+				</div>
+
+				<div class="row">
+						<p><label for="proces">Stopień zatankowania samochodu</label>
+						<meter id="wskaznikPoziomuPaliwa" value="30" min="0" max="100" title="Procent" low="30" high="70" optimum="75"></meter></p>
+						<p><label>Jeśli chce Pań inny stan zatankowania, proszę wskazać ilość paliwa wyrażoną w procentach<input type="number" name="poziomPaliwa" value="30" step="10" min="20" max="100"></label></p>
+
+				</div>
+
+				<div class="row">
+					<label><input type="submit" value="Zamawiam"></label>
+					<!-- <input type="button" name="" value=""> -->
+					<!-- <button type="button" name="button"></button> -->
+					<input type="reset" value="Wyczyść formularz">
 				</div>
 
 			</form>
